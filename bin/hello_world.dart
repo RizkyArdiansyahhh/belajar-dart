@@ -1,9 +1,5 @@
 main() {
-  String fullName = "Rizky" "ardiansyah" "pasaribu";
-  String parag = '''
-ini adalah multi
-line String
-''';
-  print(fullName);
-  print(parag);
+  String input = "1000";
+  int inputInt = int.parse(input);
+  double inputDouble = double.parse(input);
 }
