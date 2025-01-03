@@ -5,10 +5,10 @@ main() {
   names.addAll(["andi", "budi"]);
 
 // For biasa
-  // for (int i = 0; i < names.length; i++) {
-  //   names.remove("budi");
-  // }
-  // print(names);
+  for (int i = 0; i < names.length; i++) {
+    names.remove("budi");
+  }
+  print(names);
 
   // For each
   names.forEach((element) {
