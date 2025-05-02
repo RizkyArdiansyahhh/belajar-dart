@@ -8,20 +8,20 @@ void main() {
   numbers.addAll([3, 1, 4, 5, 2]);
 
   // menghapus dalam kondisi apa
-  // numbers.removeWhere((number) => number < 5);
+  numbers.removeWhere((number) => number < 5);
 
   print(numbers.contains(50) ? "ada" : "tidak");
 
-  // int result = 0;
-  // for (int i = 0; i < numbers.length; i++) {
-  //   print("$result + ${numbers[i]} =");
-  //   result += numbers[i];
-  //   print(result);
-  // }
+  int result = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    print("$result + ${numbers[i]} =");
+    result += numbers[i];
+    print(result);
+  }
 
   for (int number in numbers) {
     print(number);
   }
 
-  // numbers.forEach((number) => print(number));
+  numbers.forEach((number) => print(number));
 }
