@@ -3,7 +3,13 @@ void sayHello(String name, String Function(String) filter) {
 }
 
 void main() {
-  sayHello("Rizky", (name) {
-    return name.toUpperCase();
-  });
+  // sayHello("Rizky", (name) {
+  //   return name.toUpperCase();
+  // });
+  cetakData("Rizky ardiansyah");
+}
+
+void cetakData(String nama, [int? umur]) {
+  print("nama : $nama");
+  if (umur != null) print("umur : $umur");
 }
