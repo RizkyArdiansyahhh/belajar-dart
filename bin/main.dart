@@ -1,9 +1,13 @@
 import 'user.dart';
+import 'ignore_parameter.dart';
 
 main() {
-  Map<String, dynamic> json = {"nama": "Rizky ardiansyah", "umur": 20};
+  Orang orang1 =
+      Orang("Rizky", doingHobby: (_) => print("My Hobby is basketball"));
 
-  User riski = User.fromJson(json);
-  print(riski.umur);
-  print(riski.name);
+  orang1.takeArest();
 }
+
+// void rizkyHobby(String name) {
+//   print("$name is basketball");
+// }
