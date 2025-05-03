@@ -1,14 +1,14 @@
 void main() {
-  PersegiPanjang kotak1 = PersegiPanjang(lebar: 10, panjang: 20);
+  PersegiPanjangFirst kotak1 = PersegiPanjangFirst(lebar: 10, panjang: 20);
 
   print(kotak1.hitungLuas());
 }
 
-class PersegiPanjang {
+class PersegiPanjangFirst {
   double lebar;
   double panjang;
 
-  PersegiPanjang({required this.lebar, required this.panjang});
+  PersegiPanjangFirst({required this.lebar, required this.panjang});
 
   double hitungLuas() {
     return lebar * panjang;
