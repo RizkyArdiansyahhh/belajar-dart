@@ -1,8 +1,9 @@
-import 'person.dart';
-import 'students.dart';
+import 'user.dart';
 
 main() {
-  Person person1 = Students(studentName: "Rizky Ardiansyah");
-  // person1.nama = "Rizky Ardiansyah";
-  print(person1.nama);
+  Map<String, dynamic> json = {"nama": "Rizky ardiansyah", "umur": 20};
+
+  User riski = User.fromJson(json);
+  print(riski.umur);
+  print(riski.name);
 }
